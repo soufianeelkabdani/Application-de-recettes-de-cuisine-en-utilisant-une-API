@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Application de recettes de cuisine en utilisant une API</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-top: 3rem;  margin: 2rem 12rem; color: white;"> L'art de vous faire voyager à travers la gastronomie du Monde</h1>
+    <form style="margin: 3rem;" class="d-flex">
+        <input style="margin-left: 10rem;width: 63rem;" id="searchInput" class="form-control me-1" type="search"
+            placeholder="choisissez votre Plat préféré !" aria-label="Search">
+        <button id="searchBtn" class="btn btn-success" type="submit" style="background-color: rgb(8, 24, 239);">Recherche</button>
+    </form>
+    <div class="menu-btns">
+        <button type="button" class="menu-btn active-btn" id="featured">page d'accueil</button>
+        <a href="index1.html" type="button" class="menu-btn" id="today-special">Catégorie/Région</a>
+    </div>
+    <section class="container"></section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Plats</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalDetails">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button style="background-color: blue;" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+
+</footer>
+<div class="container" id="test">
+    <div class="row justify-content-center mt-4" id="cardsaffiche"></div>
+</div>
+</div>
+
+<footer>
+<div aria-label="...">
+    <ul class="pagination">
+        <li class="page-item">
+            <a id="prevButton" class="page-link" href="#">précédent</a>
+        </li>
+        <li class="page-item">
+            <a id="nextButton" class="page-link" href="#">Suivant</a>
+        </li>
+    </ul>
+</div>
+</footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
